@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar</title>
+  </head>
+  <body>
+    <div id="form-div">
+      <h1><img src="sun-img.png" alt="Solar" width="50" />Solar</h1>
+      <h3>Press on the black space to create a planet</h3>
+      <ul>
+        <form class="form hidden">
+          <h4>Select planet specifications:</h4>
+          <div class="form__row">
+            <label class="form__label">Mass</label>
+            <input
+              type="range"
+              min="5"
+              max="30"
+              value="10"
+              class="form__input form__input--mass"
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label">Speed</label>
+            <input
+              type="range"
+              min="10"
+              max="100"
+              value="50"
+              class="form__input form__input--speed"
+            />
+          </div>
+          <div class="form__row">
+            <label>Rotation</label>
+            <select class="form__input form__input--rotation">
+              <option value="clockwise">Clockwise</option>
+              <option value="counterclockwise">Counterclockwise</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label>Color</label>
+            <input type="color" value="#ffffff" class="form__input--color" />
+          </div>
+          <button class="submit-btn">Submit</button>
+        </form>
+      </ul>
+    </div>
+    <div id="canvas-div">
+      <h1></h1>
+    </div>
+
+    <script src="jscolor.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

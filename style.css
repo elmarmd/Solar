@@ -1,0 +1,61 @@
+.overall-container {
+  display: flex;
+  margin: 25px;
+  /* padding-top: 0px; */
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #fff;
+  display: flex;
+  margin-top: 0px;
+}
+
+h3 {
+  color: blue;
+}
+
+#form-div {
+  background-color: rgb(254, 255, 227);
+  padding: 0 15px;
+  height: 649.5px;
+  margin-top: 21.5px;
+  width: 15rem;
+  border: 2px solid;
+  border-radius: 10px 0 0 10px;
+  /* padding-top: 0px; */
+}
+ul {
+  padding-left: 0;
+}
+
+.form__row {
+  margin-bottom: 10px;
+}
+
+#canvas-div {
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  background-color: rgb(33, 33, 33);
+  margin: 0;
+  padding: 0;
+  border: 2px solid;
+}
+
+input {
+  font-family: "Manrope", sans-serif;
+}
+
+button {
+  font-family: "Manrope", sans-serif;
+  font-size: medium;
+  width: 120px;
+  height: 30px;
+}
+
+.hidden {
+  display: none;
+}
