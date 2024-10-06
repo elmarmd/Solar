@@ -24,6 +24,7 @@ h3 {
   border: 2px solid;
   border-radius: 10px 0 0 10px;
   /* padding-top: 0px; */
+  background-image: linear-gradient(to top left, #ffe928, #fffcca);
 }
 ul {
   padding-left: 0;
@@ -45,8 +46,11 @@ canvas {
   border: 2px solid;
 }
 
-input {
-  font-family: "Manrope", sans-serif;
+select {
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 3px;
+  transition: all 0.2s;
 }
 
 button {

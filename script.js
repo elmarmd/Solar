@@ -92,36 +92,10 @@ class Planet extends CelestialBody {
         this.#angle = -this.#angle;
       }
     }
-    console.log("Angle = ", this.#angle);
   }
 
   _rotate() {
-    // const G = 6.6743 * Math.pow(10, -11);
-    // const M_SUN = 1.989 * Math.pow(10, 30);
-
-    // // console.log(G);
-    // // Gravitational force
-    // let f = (G * this.mass * M_SUN) / this.#orbitR ** 2;
-
-    // // Acceleration of planet toward the Sun
-    // let a = f / this.mass / Math.pow(10, 8);
-
-    // // Velocity in circular orbit
-    // let v = Math.sqrt((G * M_SUN) / this.#orbitR) / Math.pow(10, 8);
-
-    // // console.log(f, a, v);
-
-    // const PI = 3.1415;
-    // // Calculate direction in Radians
-
-    // this.x = this.x + v * Math.cos(this.#angle) * 0.02;
-    // this.x = this.x +
-    // this.y = this.y + v * Math.sin(this.#angle) * 0.02;
-
-    // // console.log("New coordinates: ", this.x, this.y);
-
     // Update coordinates
-
     this.x = canvasWidth / 2 + this.#orbitR * Math.cos(this.#angle);
     this.y = canvasHeight / 2 + this.#orbitR * Math.sin(this.#angle);
 
@@ -134,7 +108,7 @@ class Planet extends CelestialBody {
       else this.#angle = 3.1415;
     }
 
-    // console.log("hi");
+    // Re-draw object
     this._drawBody();
 
     return {
@@ -215,7 +189,6 @@ class GUI {
     // Get coordinates of where the mouse was clicked on canvas
     this.x = event.offsetX;
     this.y = event.offsetY;
-    console.log(this.x, this.y);
 
     // Show object specification form on the sidebar
     form.classList.remove("hidden");
